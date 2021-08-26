@@ -1,0 +1,6 @@
+== "Exactly Equal"
+< "Less then"
+> "Greater then"
+>= "Greater then or equal"
+<= "Less then or equal"
+!= "Not equal"
