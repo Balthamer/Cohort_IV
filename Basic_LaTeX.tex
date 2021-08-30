@@ -2,6 +2,8 @@
 
 \usepackage[margin=1in]{geometry}
 \usepackage{titlesec}
+\usepackage[backend=biber,style=apa,autocite=inline]{biblatex}
+\addbibresource{biblio.bib}
 \titleformat{\section}{\Large\bfseries}{}{0em}{}
 
 \title{Basic's of LaTeX}
@@ -17,5 +19,10 @@ This is some text!
 This text is on the same line as the first.
 
 This is a new paragraph. You can do bold, italic and underline in LaTeX. \textbf{This is bold.} \textit{This is italic.} \underline{This is underlined.} \textbf{\textit{\underline{This is all three at once.}}} If you want to do a quote, you can use two tic marks to open the quote. ``This is a quote."
+
+``LaTeX is great and everyone should use it \parencite{allred21}." 
+
+
+\printbibliography
 
 \end{document}
