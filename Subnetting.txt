@@ -1,0 +1,57 @@
+Network: 192.168.100.0
+Subnet:  255.255.255.0
+
+-- Make 4 networks
+
+Binary:
+Network: 11000000.10101000.01100100.00000000
+Subnet:  11111111.11111111.11111111.11000000
+         NNNNNNNN.NNNNNNNN.NNNNNNNN.nnHHHHHH
+
+CIDR: /26
+
+Network ID:   192.168.100.0
+Subnet Mask:  255.255.255.192
+First Usable: 192.168.100.1
+Last Usabale: 192.168.100.62
+Broadcast:    192.168.100.63
+Next Network: 192.168.100.64
+
+Network ID:   192.168.100.64
+Subnet Mask:  255.255.255.192
+First Usable: 192.168.100.65
+Last Usabale: 192.168.100.126
+Broadcast:    192.168.100.127
+Next Network: 192.168.100.128
+
+Network ID:   192.168.100.128
+Subnet Mask:  255.255.255.192
+First Usable: 192.168.100.129
+Last Usabale: 192.168.100.190
+Broadcast:    192.168.100.191
+Next Network: 192.168.100.192
+
+Network ID:   192.168.100.192
+Subnet Mask:  255.255.255.192
+First Usable: 192.168.100.193
+Last Usabale: 192.168.100.254
+Broadcast:    192.168.100.255
+Next Network: 192.168.101.0
+
+
+-- Make 8 networks
+
+What I'm giveing you: 192.168.1.0/24
+
+CIDR: /27
+Subnetmask: 255.255.255.224
+
+What are the networks:
+192.168.1.0   \
+192.168.1.32   \
+192.168.1.64    \
+192.168.1.96     \
+192.168.1.128    /
+192.168.1.160   /
+192.168.1.192  /
+192.168.1.224 /
