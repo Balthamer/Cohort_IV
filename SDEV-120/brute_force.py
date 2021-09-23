@@ -2,7 +2,7 @@ import hashlib
 import string
 import itertools
 
-with open ("shadow.txt","r") as fShadow:
+with open ("hashed.txt","r") as fShadow:
     with open ("pass_list.txt","r") as fPass_list:
         for line in fShadow:
             for passwd in fPass_list:
@@ -11,7 +11,7 @@ with open ("shadow.txt","r") as fShadow:
                     print(f"\n\nCracked\n\n{hashed}    {passwd}\n\nThe password is {passwd}.")
                     quit()
 
-with open ("shadow.txt","r") as fShadow:
+with open ("hashed.txt","r") as fShadow:
     for line in fShadow:
         for x in range(1,25):
             res = itertools.product(string.printable[:-6],repeat = x)
