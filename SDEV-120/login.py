@@ -24,7 +24,6 @@ def new_user(name):
             print("Your passwords did not match")
 
 def login():
-    state = False
     unames = []
     shadows = []
     while True:
@@ -44,19 +43,16 @@ def login():
     while True:
         print(state, unames, shadows) ##
         user = input("What is your user name?\n")
-        print(user, unames) ##
         if user in unames:
             ## TODO: Add password section
             count = 0
             position = unames.index(user)
-            print(position) ##
             while count < 2:
                 count += 1
                 passwd = hashlib.md5(getpass.getpass("Please ener your password:").encode('UTF-8')).hexdigest()
-                print(passwd, shadows[position]) ##
                 if passwd == shadows[position]:
                     print("Logged In")
-                    break
+                    return True
         else:
             with open('log.txt','a') as fLog:
                 fLog.write(f"ATTEMPTED LOGING WITHOUT CRADENTALS: {timestamp()}")
