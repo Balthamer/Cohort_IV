@@ -1,2 +1,14 @@
-New user: balthamer, created by: System, at: 2021-09-23 15:30:59
-New user: balthamer, created by: System, at: 2021-09-24 15:27:55
+2021-09-30 13:48:17, NEW_USER: balthamer created by: System.
+2021-09-30 13:48:48, NOT_IN_LIST: Attempted login with username not in list.
+2021-09-30 15:23:32, NOT_IN_LIST: Attempted login with username not in list.
+2021-09-30 15:27:45, LOGIN FAILURE: Attempted login with user balthamer
+2021-09-30 15:28:00, AUTHENTICATED: balthamer
+2021-09-30 15:39:49, LOGIN FAILURE: Attempted login with user balthamer
+2021-09-30 15:41:54, AUTHENTICATED: balthamer
+2021-09-30 15:59:31, AUTHENTICATED: balthamer
+2021-09-30 16:00:06, NEW_USER: lushin created by: balthamer.
+2021-09-30 16:03:20, AUTHENTICATED: lushin
+2021-09-30 16:42:52, LOGIN_FAILURE: Attempted login with user balthamer
+2021-09-30 16:43:17, LOGIN_FAILURE: Attempted login with user balthamer
+2021-09-30 16:43:29, NOT_IN_LIST: Attempted login with username not in list.
+2021-09-30 16:43:52, AUTHENTICATED: lushin
